@@ -1,4 +1,13 @@
-/* Imopre google class */
+.inter-open-ai {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: normal ;
+}
+
+
+ 
+ /* Imopre google class */
 body {
   margin: 0;
   font-family: 'Raleway',sans-serif;
@@ -7,40 +16,48 @@ body {
 }
 
 
-
-header.background-ing{
-   background: url('../Assets/Hero-bg.png')
-   height: 100vh
-   display: flex;
-   Flex-direction: column;
-   justify-content: space-between;
-   padding: 40px;
-   color: #0000000;
+/* header style */
+.header{
+   background: url('../Assets/Hero-bg.png');
+   max-width: 1440px 736px;
+   text-align: center;
+   gap: 158px;
 }
+/* nav styles */
 .new{
   color: #003cff;
-}
 
-.nev-content {
+}
+/* nav content */
+.nav-content {
  display: flex;
- color: #4E47FF;
+ gap: 158px;
  justify-content: space-between;
-  align-items: center;
+ margin: 50px 150px;
 }
 
 .nav-title{
  font-size: 24px;
+ padding: 12px 36px;
+ font-size: #4E47FF;
+}
+ 
+
+.btn-primary{
+ background-color: #007bff;
+ border: none;
+ font-weight: bold;
+ color: #FFFFFF;
+ padding: 12px 36px;
+ border-radius: 4px;
+ cursor: #FFFFFF;
+
 }
 
-
-.btn-ptimary{
-  background-color:  #007bff;
-  border: none;
-  color:  #fff;
-  padding: 12px 24px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: 'Inter' sans-serif'
+.content-title {
+  color: #252432;
+  font-weight: bold;
+  font-size: 65px;
 }
 
 .hero-content {
@@ -55,12 +72,19 @@ line-height: 1.2;
 margin-bottom: 20px;
 }
 
+/* main */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*action section  */
 .action-section {
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 80px 40px;
-background-color: #1f1f1f;
+ display: flex;
+ justify-content: space-between;
+ color: #252432;
+ max-width: 1140px 306px;
+
 }
 
 .action {
@@ -70,72 +94,91 @@ background-color: #1f1f1f;
 
 .action-title {
 font-size: 32px;
+tab-size: 42px;
 margin-bottom: 10px;
-}    
+color: #000000;
+}   
+
+.bb-primary {
+  font-size: 24px;
+  color: #000;
+  border-radius: 50%;
+}
+
 .action-description {
 font-size: 18px;
 margin-bottom: 20px;
 }
-.action-ing {
-max-width: 100%;
-border-radius: 10px;
+.action-img {
+  max-width: 100%;
+  border-radius: 20px;
 }
+
 .user-section {
-text-align: center;
-padding: 60px 40px; 
-background-color: #ddd6f8
+  text-align: center;
+  padding: 80px 50px;
+  background-color: #ddd6f8;
+  gap: 50px;
+  max-width: 1140px 342px;
+
+
+  width: 750px; margin: 0 auto;
 }
 
 .user-title {
-font-size: 36px;
-margin-bottom: 40px;
+  color: #252432;
+  font-size: 38px;
 }
 
 .iteam-container {
 display: flex; 
 justify-content: center;
-gap: 60px;
+gap: 10px;
 color: #f5f8ff;
 }
 
 .user-iteam {
- padding: 40px;
- border-radius: 10px;
- color:  #003cff;
+  padding: 40px;
+  border-radius: 10px;
+  color: #003cff;
 }
+
 
 .iteam-title {
-  font-size: 48px;
-  margin: 0;
+ font-size: 48px;
+ color:  #003cff;
+ margin: 0;
 }
 
-.item-description {
-  font-size: 40px;
-  margin: 5px;
+.iteam-descripition {
+  font-size: 10px;
+  color: #6e5f5f;
+  margin: 5px 0 0 0;
+}
+/* git section styale */
+.git-containare {
+  display: flex;
+  gap: 20px;
+  
 }
 
 .git-section {
- padding: 60px;
+  padding: 60px 40px;
  background-color:  #f5f8ff;
  color:  #000000;
  text-align: center;
 }
 
 .git-section-title {
-  font-size: 32px;
-  margin-bottom: 40px;
+  color: #252432;
+  font-size: 42px;
+  margin: 40px;
 }
 
-.git-containaer {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
-.gititeam {
-  border:  #ffffff;
-  padding: 30px;
+.git-iteam {
+  border:  #000000;
+  padding: 20px;
   border-radius: 10px;
   width: 300px;
 }
@@ -147,10 +190,12 @@ color: #f5f8ff;
 .git-titel {
   margin: 20px 0 10px 0;
   font-size: 20px;
+  color: #000;
 }
 
 .description {
   font-size: 16px;
+  color: #000;
 }
 
 .pro {
@@ -159,23 +204,45 @@ color: #f5f8ff;
   margin-right: 10px;
 }
 
+/* free stayle */
+.free-img {
+  margin: 20px 150px;
+}
+
+
+
 .free {
   align-items: center;
   background: #ffffff;
   padding: 80px 40px;
-  color:  #000;
+  color:  #FFFFFF;
   width: 900px;
   margin: auto;
 }
-
-.free-content {
-  flex: 1;
+/* free styale */
+.free-section {
+  display: flex;
+  max-width: 140px 696.77px;
 }
 
 .free-title {
   font-size: 36px;
+  text-align: center;
   margin-bottom: 20px;
+  color: #000000;
 }
+
+.free-primary{
+ color: #817b7b;
+ text-align: center;
+}
+
+.canter-vu {
+  text-align: center;
+  
+
+}
+
 
 .free-description {
   font-size: 18px;
@@ -185,36 +252,51 @@ color: #f5f8ff;
 .free-to-img {
   max-width: 100%;
   border-radius: 10px;
+  text-align: center;
 }
 
-.nfree-section {
+.free-section {
   background-color: #f5f8ff;
   padding: 60px 40px;
   text-align: left;
   color: #000;
+  margin-top: 71px;
 }
 
-.nfree-containar form {
+
+/* footer styles */
+footer {
+  padding: 70px 0;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 40px;
-  margin: 0 auto;
+}
+
+.nfree-title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #000000;
+}
+
+.free-center {
+  text-align: center;
+
 }
 
 .label-title {
-  text-align: left;
   font-size: 16px;
+  color: #000000;
 }
 
 input[type="email"]
 input[type="text"]
 textarea {
-  padding: 12px;
+  height: 64px;
   border: none;
   border-radius: 4px;
   font-family: 'inter',sans-serif;
-}
+  background-color: white;
+  }
+
+
 
 .btn-ptimary{
   margin-top: 20px;
@@ -226,27 +308,29 @@ textarea {
   cursor: pointer;
 }
 
-.footer-section {
-   background: #ffffff;
-  padding: 40px;
+.footer-section { 
+  display: flex;
+  background: #ffffff;
+  padding: 45px;
   text-align: center;
-  color: #000;
+}
+.footer-ico{
+  text-align: center;
 }
 
 .footer-logo {
-  font-size: 24px;
+  color: #4E47FF;
+  font-size: 100%;
   margin-bottom: 10px;
 }
 
 .footer-deseription {
   font-size: 16px;
   margin-bottom: 20px;
-  color: #000000;
+
 }
 
 .footer-centainer {
-  display: flex;
-  justify-content: center;
   gap: 40px;
   color: #000;
 }
@@ -256,4 +340,24 @@ textarea {
   text-decoration: none;
   font-size: 16px;
 
+}
+/* nav styles */
+ nav {
+  align-items: center;
+ 
+} 
+
+nav div a {
+  text-decoration: none;
+
+}
+
+
+.auto-me {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+}
+.dark-to {
+  color: #8987A1;
 }
