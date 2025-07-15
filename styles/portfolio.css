@@ -270,14 +270,28 @@ footer {
   display: flex;
 }
 
+/* nfree styles */
+.nfree-centainar{
+  max-width: 1140px 632px;
+  padding: 71px 0;
+  justify-content: center;
+  display: flex;
+  gap: 200px;
+}
 .nfree-title {
-  margin-bottom: 40px;
-  font-size: 32px;
+  font-size: 97px;
   color: #000000;
 }
 
+
+.inter-le{
+ color: #000000;
+ font-size: 18PX;
+}
+
 .free-center {
-  text-align: center;
+  alignment-baseline: 19px;
+  align-self: normal;
 
 }
 
@@ -286,15 +300,16 @@ footer {
   color: #000000;
 }
 
-input[type="email"]
-input[type="text"]
-textarea {
-  height: 64px;
-  border: none;
-  border-radius: 4px;
-  font-family: 'inter',sans-serif;
+section input[type="email"], section input[type=Name],section textarea{
+  height: 70px;
+  border-radius: 5px;
   background-color: white;
-  }
+  display: block;
+  width: 100%;
+  padding: 20px 32px;
+  margin-bottom:10px;
+  border:  none;
+}
 
 
 
@@ -308,8 +323,11 @@ textarea {
   cursor: pointer;
 }
 
+
+/*footer styles */
 .footer-section { 
   display: flex;
+  justify-content: center;
   background: #ffffff;
   padding: 45px;
   text-align: center;
@@ -320,7 +338,7 @@ textarea {
 
 .footer-logo {
   color: #4E47FF;
-  font-size: 100%;
+  font-size: 100px;
   margin-bottom: 10px;
 }
 
@@ -355,9 +373,10 @@ nav div a {
 
 .auto-me {
   display: flex;
+  justify-content: space-between;
   gap: 24px;
   text-align: center;
 }
 .dark-to {
-  color: #8987A1;
+  color: #7e7d89;
 }
